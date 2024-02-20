@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+    <div class="img_bd">
+        <div class="img_front">
+            <img src="/Img/modelo_negra.jpg" alt="">
+        </div> 
+        <div class="name">
+        <h1>
+            Aghata <b>Sophia</b>
+        </h1>
+        </div>
+        <div class="description" id="description" style="display:none">
+            <h1>“Quem olha fora sonha, quem olha dentro desperta.” <br> — Carl Jung; </h1>
+        </div>
+        <button id="toggleButton" onclick="toggleDescription()">Mostrar Descrição</button>
+        <div class="links">
+            <div class="biblioteca">
+            <a href="https://www.baixelivros.com.br/"><b>Biblioteca vitual:</b> Explore novos horizontes através da leitura na biblioteca</a>
+            </div>
+            <div class="music">
+                <a href="https://www.youtube.com/watch?v=U_j2tVBa_ig">Meu ultimos vídeo</a>
+                </div>
+                <div class="portfolia">
+                    <a href="https://pt.wix.com/portfolio-online">Portfólia</a>
+                    </div>
+                    <div class="agenda">
+                        <a href="https://www.agendaai.com.br/">Agenda</a>
+                        </div>
+        </div>
+       <footer>
+        <div class="redes_sociais">
+            <ul>
+           <li> <a class="facebook" href="#">
+                <img src="/Img/facebook_6507576.png" alt="">
+            </a></li>
+            <li> <a href="#">
+                <img src="/Img/social_12234080.png" alt="">
+            </a></li>
+            <li> <a href="#">
+                <img src="/Img/linkedin_2111368.png" alt="">
+            </a></li>
+            </ul>
+        </div>
+       </footer>
+     
+    </div>
+</section>
+<script>
+    function toggleDescription() {
+        var descriptionDiv = document.getElementById("description");
+        var toggleButton = document.getElementById("toggleButton");
+
+        if (descriptionDiv.style.display === "none" || descriptionDiv.style.display === "") {
+            descriptionDiv.style.display = "block";
+            toggleButton.textContent = "Esconder Descrição";
+        } else {
+            descriptionDiv.style.display = "none";
+            toggleButton.textContent = "Mostrar Descrição";
+        }
+    }
+</script>
+</body>
+</html>
